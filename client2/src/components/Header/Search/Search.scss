@@ -1,0 +1,89 @@
+@import "../../../css-config/mixins.scss";
+
+.modal-dialog {
+  min-width: 90vw;
+}
+.css-1pb3a8u-JoyCardContent-root {
+  min-width: 146px !important;
+}
+.star-text {
+  position: absolute;
+  top: 7px;
+  left: 11px;
+}
+.right-disp-container {
+  display: flex;
+  align-items: flex-start !important;
+  flex-direction: column;
+  .price-main {
+    margin-top: 20px;
+    .discounted-price {
+      font-size: 1.875rem !important;
+      font-weight: 700 !important;
+      color: #1d2d50 !important;
+    }
+
+    .orignal-price {
+      font-size: 0.875rem !important;
+      color: #1d2d50 !important;
+      text-decoration: line-through !important;
+    }
+  }
+  .product-description {
+    font-size: 10px;
+    margin-top: 15px;
+    line-height: 11px;
+    color: #4a5157;
+  }
+}
+.add-to-cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  background-color: #1f2937;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #374151;
+}
+
+.add-to-cart-btn:focus {
+  outline: 2px solid #93c5fd;
+  outline-offset: 2px;
+}
+.css-1hchyn9-JoyCard-root {
+  @media screen and (max-width: 400px) {
+    width: 100% !important;
+  }
+}
+.css-60ymc7-JoyCardOverflow-root {
+  @media screen and (max-width: 500px) {
+    width: auto !important;
+  }
+}
+.modal.show .modal-dialog {
+  margin-top: 84px;
+}
+.btn-close {
+  /* Your existing styles */
+  color: #1d2d50 !important;
+  background-image: url("../../../assets/close/close.png");
+  opacity: 1 !important;
+  font-size: 30px;
+  transition: transform 0.3s ease;
+}
+
+.btn-close:hover {
+  transform: rotate(180deg);
+}
+
